@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aidan Delpierre — Portfolio</title>
+</head>
+<body>
+
+    <!-- <div id="custom-cursor"></div>-->
+    <div id="custom-cursor-blur"></div>
+
+    <div class="bg-mesh"></div>
+
+    <nav>
+        <a href="#" class="logo hoverable">A.DELPIERRE</a>
+        <div class="nav-links">
+            <a href="#page-one-hero" class="hoverable">Bio & CV</a>
+            <a href="#page-two-projects" class="hoverable">Personnels</a>
+            <a href="#page-three-future" class="hoverable">Vision</a>
+            <a href="#page-four-academic" class="hoverable">Académiques</a>
+        </div>
+    </nav>
+
+    <div class="scroll-indicator">SCROLL</div>
+
+    <section id="page-one-hero">
+        <div class="reveal-lines in-view">
+            <h1 class="hero-title">Aïdan<span>Delpierre</span></h1> 
+        </div>
+        <p class="hero-subtitle reveal in-view">Développeur Informatique & Créateur Multimédia</p>
+
+        <div class="bio-container">
+            <div class="bio-image-wrapper reveal">
+                <div class="bio-image-placeholder">
+                    <svg width="60%" height="60%" viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="40" stroke="#4A8C5C" stroke-width="2" stroke-dasharray="5 5"/>
+                        <path d="M30 50 L70 50 M50 30 L50 70" stroke="#EAF6EF" stroke-width="1"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="bio-text reveal">
+                <p>
+                    Passionné par la convergence entre la <strong>logique technique</strong> et l'<strong>expression artistique</strong>, j'explore les possibilités structurelles du code pour concevoir des expériences numériques interactives et immersives. Mon cursus universitaire me permet de consolider des bases solides en ingénierie logicielle tout en cultivant une forte affinité pour l'audiovisuel, la spatialisation sonore et le sound design de pointe.
+                </p>
+            </div>
+        </div>
+
+        <div class="cv-grid" style="margin-top: 120px;">
+            <div class="cv-block reveal">
+                <h2 class="cv-section-title">Objectif & Profil</h2>
+                <div class="cv-meta-item">
+                    <span>Recherche Spécifique</span>
+                    <strong> Contrat d'Alternance (BUT Informatique)</strong>
+                </div>
+                <div class="cv-meta-item">
+                    <span>Rythme Souhaité</span>
+                    En fonction du planning universitaire — Alternance régulière (moyenne d'une semaine sur deux, y compris vacances scolaires).
+                </div>
+                <div class="cv-meta-item" style="margin-top: 20px;">
+                    <span>Localisation</span>
+                    <strong>La Garnache / Nantes</strong><br>
+                    0762677075 | aidan24082306@gmail.com<br>
+                    Né le 24 Août 2007 — Véhiculé (Permis B)
+                </div>
+            </div>
+
+            <div class="cv-block reveal">
+                <h2 class="cv-section-title">Qualités & Compétences Linguistiques</h2>
+                <div class="cv-tags" style="margin-bottom: 30px;">
+                    <span class="cv-tag hoverable">Assidu</span>
+                    <span class="cv-tag hoverable">Motivé</span>
+                    <span class="cv-tag hoverable">Sociable</span>
+                    <span class="cv-tag hoverable">Curieux</span>
+                    <span class="cv-tag hoverable">Créatif</span>
+                </div>
+                
+                <h2 class="cv-section-title">Langues</h2>
+                <div class="lang-container">
+                    <!-- Item Anglais -->
+                    <div class="lang-item">
+                        <div class="lang-info">
+                            <span class="lang-name">Anglais</span>
+                            <!-- On réutilise la variable CSS directement dans le texte grâce au CSS (voir global.css) ou en dur ici -->
+                            <span class="lang-percentage">89%</span>
+                        </div>
+                        <div class="lang-bar-bg">
+                            <!-- La variable --progress est définie ici pour chaque barre -->
+                            <div class="lang-bar-fill" style="--progress: 89%;"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item Espagnol -->
+                    <div class="lang-item">
+                        <div class="lang-info">
+                            <span class="lang-name">Espagnol</span>
+                            <span class="lang-percentage">46%</span>
+                        </div>
+                        <div class="lang-bar-bg">
+                            <div class="lang-bar-fill" style="--progress: 46%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-block reveal">
+                <h2 class="cv-section-title">Expérience Professionnelle</h2>
+                <ul class="cv-timeline">
+                    <li class="cv-timeline-item">
+                        <span class="cv-timeline-date">2026</span>
+                        <strong>Job d'été — Snack</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Camping Le Pont d'Yeu</p>
+                    </li>
+                    <li class="cv-timeline-item">
+                        <span class="cv-timeline-date">2025</span>
+                        <strong>Job d'été — Employé Libre-Service</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Super U — Saint-Jean De Monts</p>
+                    </li>
+                    <li class="cv-timeline-item">
+                        <span class="cv-timeline-date">2024 - 2025</span>
+                        <strong>Job Étudiant (Missions Décembre / Mai)</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Burger King — Challans</p>
+                    </li>
+                    <li class="cv-timeline-item">
+                        <span class="cv-timeline-date">2021</span>
+                        <strong>Stage d'Observation de 3ème</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Norauto — Challans</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cv-block reveal">
+                <h2 class="cv-section-title">Cursus Académique</h2>
+                <ul class="cv-timeline">
+                    <li class="cv-timeline-item">
+                        <span class="cv-timeline-date">En cours</span>
+                        <strong>BUT Informatique (Bachelor Universitaire de Technologie)</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Formation supérieure en développement d'applications, architectures réseaux et bases de données.</p>
+                    </li>
+                    <li class="cv-timeline-item">
+                        <span class="cv-timeline-date">Juin 2025</span>
+                        <strong>Baccalauréat Technologique STI2D</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Sciences et Technologies de l'Industrie et du Développement Durable.</p>
+                    </li>
+                    <li class="cv-timeline-item">
+                        <span class="cv-timeline-date">Mai 2025</span>
+                        <strong>Obtention du Permis de Conduire</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Mobilité complète garantie sur l'ensemble de la région.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- BOUTON DE TELECHARGEMENT CV COMPLET -->
+            <div class="cv-download-container reveal">
+                <a href="assets/CV.pdf" download class="btn-download hoverable">
+                    Télécharger mon CV (PDF) <span>↓</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="marquee-container reveal">
+            <div class="marquee-content">
+                <h4>Développement de modules audio interactifs</h4>
+                <h4>Exploration Scénographique & Audiovisuelle</h4>
+                <h4>Programmation WebGL / Three.js</h4>
+                <h4>Veille Technologique Bases de Données</h4>
+                <h4>Développement de modules audio interactifs</h4>
+                <h4>Exploration Scénographique & Audiovisuelle</h4>
+                <h4>Programmation WebGL / Three.js</h4>
+                <h4>Veille Technologique Bases de Données</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-two-projects">
+        <span class="section-header-num reveal">02 / EXPERIENCES CRÉATIVES</span>
+        <h2 class="section-main-title reveal">Projets Personnels</h2>
+
+        <div class="projects-showcase">
+            <a href="#" class="project-card reveal hoverable">
+                <div class="project-media-container"></div>
+                <div class="project-info">
+                    <div>
+                        <h3>Production Sonore & Interactivité Audio</h3>
+                        <p>Recherche structurelle sur la synchronisation d'événements visuels complexes et de flux de données sonores. Conception d'environnements rythmés et traitement du signal audio.</p>
+                    </div>
+                    <span class="project-link-icon">↗</span>
+                </div>
+            </a>
+
+            <a href="#" class="project-card reveal hoverable" style="margin-top: 60px;">
+                <div class="project-media-container"></div>
+                <div class="project-info">
+                    <div>
+                        <h3>Création Multimédia & Graphisme Temps-Réel</h3>
+                        <p>Développement de maquettes d'applications interactives mettant en œuvre des moteurs physiques Web et des structures géométriques dynamiques en environnement tridimensionnel.</p>
+                    </div>
+                    <span class="project-link-icon">↗</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="page-three-future">
+        <div class="vision-container">
+            <span class="section-header-num reveal" style="text-align: center;">03 / PERSPECTIVES</span>
+            <p class="vision-text reveal">
+                Mon ambition est d'évoluer vers le poste de <span>Creative Technologist</span>. Un profil hybride capable de traduire des concepts artistiques d'avant-garde en architectures logicielles robustes et performantes, faisant le lien entre la <span>Rigueur du Code</span> et la <span>Sensibilité Audiovisuelle</span>.
+            </p>
+            <p class="vision-footer-note reveal">// Intégration à court terme d'une structure innovante par le biais de l'alternance informatique.</p>
+        </div>
+    </section>
+
+    <section id="page-four-academic">
+        <span class="section-header-num reveal">04 / STRUCTURE TECHNIQUE</span>
+        <h2 class="section-main-title reveal">Projets Académiques</h2>
+
+        <div class="academic-dashboard">
+            <div class="dashboard-cell reveal">
+                <div class="cell-top">
+                    <span>[ ALGORITHMES & LOGICIEL ]</span>
+                    <span>BUT INFO</span>
+                </div>
+                <div class="cell-mid">
+                    <h3>Conception Logicielle & POO</h3>
+                    <p>Développement d'architectures d'applications structurées et découplées. Implémentation de patterns de conception rigoureux et gestion optimisée de la mémoire système.</p>
+                </div>
+                <div class="cell-bottom-spec">
+                    <span>Technologies :</span>
+                    <div class="tech-tags">
+                        <span class="tech-tag hoverable">Python</span>
+                        <span class="tech-tag hoverable">C</span>
+                        <span class="tech-tag hoverable">Java</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-cell reveal" style="transition-delay: 0.1s;">
+                <div class="cell-top">
+                    <span>[ SYSTÈMES DE DONNÉES ]</span>
+                    <span>BUT INFO</span>
+                </div>
+                <div class="cell-mid">
+                    <h3>Modélisation & Optimisation SQL</h3>
+                    <p>Création, administration et normalisation de structures relationnelles complexes. Écriture de requêtes complexes de traitement de données et indexation de performances.</p>
+                </div>
+                <div class="cell-bottom-spec">
+                    <span>Technologies :</span>
+                    <div class="tech-tags">
+                        <span class="tech-tag hoverable">PostgreSQL</span>
+                        <span class="tech-tag hoverable">Oracle SQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-cell reveal" style="transition-delay: 0.2s;">
+                <div class="cell-top">
+                    <span>[ ARCHITECTURE RÉSEAU ]</span>
+                    <span>BUT INFO</span>
+                </div>
+                <div class="cell-mid">
+                    <h3>Infrastructures & Modélisation OSI</h3>
+                    <p>Configuration de maquettes réseaux d'entreprise, calcul précis de masques de sous-réseaux et analyse de trames de communication pour la sécurisation de protocoles.</p>
+                </div>
+                <div class="cell-bottom-spec">
+                    <span>Technologies :</span>
+                    <div class="tech-tags">
+                        <span class="tech-tag hoverable">Linux</span>
+                        <span class="tech-tag hoverable">Wireshark</span>
+                        <span class="tech-tag hoverable">Cisco Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <span>© 2026 AIDAN DELPIERRE — TOUS DROITS RÉSERVÉS</span>
+            <span>INFORMATIQUE, AUDIOVISUEL & MUSIQUE</span>
+        </footer>
+    </section>
+
+
+
+
+
+
+
+    <script>
+        const cursor = document.getElementById('custom-cursor');
+        const cursorBlur = document.getElementById('custom-cursor-blur');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            setTimeout(() => {
+                cursorBlur.style.left = e.clientX + 'px';
+                cursorBlur.style.top = e.clientY + 'px';
+            }, 50);
+        });
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        // Barres de langues
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    
+                    // Animation
+                    if (entry.target.contains(document.querySelector('.lang-bar-fill'))) {
+                        document.querySelectorAll('.lang-bar-fill').forEach(bar => {
+                            bar.classList.add('animate-bar');
+                        });
+                    }
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal, .reveal-lines').forEach(element => {
+            revealObserver.observe(element);
+        });
+
+        window.addEventListener('scroll', () => {
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            if (window.scrollY > 100) {
+                scrollIndicator.style.opacity = '0';
+                scrollIndicator.style.transition = 'opacity 0.4s ease';
+            } else {
+                scrollIndicator.style.opacity = '1';
+            }
+        });
+
+        // SCRIPT INTERACTIF D'INCLINAISON (TILT EFFECT 3D)
+        const interactiveTags = document.querySelectorAll('.cv-tag, .tech-tag');
+
+        interactiveTags.forEach(tag => {
+            tag.addEventListener('mousemove', (e) => {
+                const rect = tag.getBoundingClientRect();
+                
+                // Position relative de la souris à l'intérieur du badge
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                // Centre du badge
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                // Calcul de l'angle d'inclinaison maximal (15 degrés max)
+                const tiltX = ((centerY - y) / centerY) * 15;
+                const tiltY = ((x - centerX) / centerX) * 15;
+                
+                // Application de la transformation
+                tag.style.transform = `perspective(400px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale(1.08)`;
+            });
+
+            tag.addEventListener('mouseleave', () => {
+                // Retour à la position d'origine
+                tag.style.transform = 'perspective(400px) rotateX(0deg) rotateY(0deg) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
