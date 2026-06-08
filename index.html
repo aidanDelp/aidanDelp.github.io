@@ -72,12 +72,12 @@
 
             <div class="cv-block reveal">
                 <h2 class="cv-section-title">Qualités & Compétences Linguistiques</h2>
-                <div class="cv-tags" style="margin-bottom: 30px;">
-                    <span class="cv-tag hoverable">Assidu</span>
-                    <span class="cv-tag hoverable">Motivé</span>
-                    <span class="cv-tag hoverable">Sociable</span>
-                    <span class="cv-tag hoverable">Curieux</span>
-                    <span class="cv-tag hoverable">Créatif</span>
+                <div class="tags" style="margin-bottom: 30px;">
+                    <span class="tag hoverable">Assidu</span>
+                    <span class="tag hoverable">Motivé</span>
+                    <span class="tag hoverable">Sociable</span>
+                    <span class="tag hoverable">Curieux</span>
+                    <span class="tag hoverable">Créatif</span>
                 </div>
                 
                 <h2 class="cv-section-title">Langues</h2>
@@ -185,7 +185,7 @@
 
         <div class="projects-showcase">
             <a href="#" class="project-card reveal hoverable">
-                <div class="project-media-container"></div>
+                <div class="project-media-container" style="background-image: url('assets/AudioVisualizer.png');"></div>
                 <div class="project-info">
                     <div>
                         <h3>Production Sonore & Audiovisuelle</h3>
@@ -193,16 +193,27 @@
                     </div>
                     <span class="project-link-icon">↗</span>
                 </div>
+                <div class="tags" style="margin: 12px; justify-content: center;">
+                    <span class="tag hoverable">Python</span>
+                    <span class="tag hoverable">PyAudio</span>
+                    <span class="tag hoverable">FLStudio</span>
+                </div>
             </a>
 
             <a href="#" class="project-card reveal hoverable" style="margin-top: 60px;">
-                <div class="project-media-container"></div>
+                <div class="project-media-container" style="background-image: url('assets/3Denvironment.png');"></div>
                 <div class="project-info">
                     <div>
                         <h3>Création Multimédia & Graphisme Temps-Réel</h3>
                         <p>Développement de maquettes d'applications interactives mettant en œuvre des moteurs physiques Web et des structures géométriques dynamiques en environnement tridimensionnel.</p>
                     </div>
+                    
                     <span class="project-link-icon">↗</span>
+                </div>
+                <div class="tags" style="margin: 12px; justify-content: center;">
+                    <span class="tag hoverable">HTML</span>
+                    <span class="tag hoverable">CSS</span>
+                    <span class="tag hoverable">JavaScript</span>
                 </div>
             </a>
         </div>
@@ -212,9 +223,9 @@
         <div class="vision-container">
             <span class="section-header-num reveal" style="text-align: center;">03 / PERSPECTIVES</span>
             <p class="vision-text reveal">
-                Mon ambition est d'évoluer vers le poste de <span>Creative Technologist</span>. Un profil hybride capable de traduire des concepts artistiques d'avant-garde en architectures logicielles robustes et performantes, faisant le lien entre la <span>Rigueur du Code</span> et la <span>Sensibilité Audiovisuelle</span>.
+                Mon ambition est d'évoluer vers le poste de <span>Creative Technologist</span>. Un profil hybride capable de meler concepts audiovisuels et programmations logicielles robustes et performantes, faisant le lien entre la <span>Rigueur du Code</span> et la <span>Sensibilité Artistique</span>.
             </p>
-            <p class="vision-footer-note reveal">// Intégration à court terme d'une structure innovante par le biais de l'alternance informatique.</p>
+            <p class="vision-footer-note reveal">// EX : Intégration à court terme d'une structure innovante par le biais de l'alternance informatique.</p>
         </div>
     </section>
 
@@ -234,10 +245,10 @@
                 </div>
                 <div class="cell-bottom-spec">
                     <span>Technologies :</span>
-                    <div class="cv-tags" style="margin-bottom: 30px;">
-                        <span class="cv-tag hoverable">Python</span>
-                        <span class="cv-tag hoverable">C</span>
-                        <span class="cv-tag hoverable">Kotlin</span>
+                    <div class="tags" style="margin-bottom: 30px;">
+                        <span class="tag hoverable">Python</span>
+                        <span class="tag hoverable">C</span>
+                        <span class="tag hoverable">Kotlin</span>
                     </div>
                 </div>
             </div>
@@ -249,14 +260,14 @@
                 </div>
                 <div class="cell-mid">
                     <h3>Modélisation & Optimisation SQL</h3>
-                    <p>Création, administration et normalisation de structures relationnelles complexes. Écriture de requêtes complexes de traitement de données et indexation de performances.</p>
+                    <p>Création, administration et normalisation de structures relationnelles complexes. Écriture de requêtes complexes de traitement de données et graphiques de performances.</p>
                 </div>
                 <div class="cell-bottom-spec">
                     <span>Technologies :</span>
-                    <div class="cv-tags" style="margin-bottom: 30px;">
-                        <span class="cv-tag hoverable">Oracle</span>
-                        <span class="cv-tag hoverable">SQL</span>
-                        <span class="cv-tag hoverable">Pandas</span>
+                    <div class="tags" style="margin-bottom: 30px;">
+                        <span class="tag hoverable">Oracle</span>
+                        <span class="tag hoverable">SQL</span>
+                        <span class="tag hoverable">Pandas</span>
                     </div>
                 </div>
             </div>
@@ -272,10 +283,10 @@
                 </div>
                 <div class="cell-bottom-spec">
                     <span>Technologies :</span>
-                    <div class="cv-tags" style="margin-bottom: 30px;">
-                        <span class="cv-tag hoverable">Linux</span>
-                        <span class="cv-tag hoverable">Wireshark</span>
-                        <span class="cv-tag hoverable">Cisco Systems</span>
+                    <div class="tags" style="margin-bottom: 30px;">
+                        <span class="tag hoverable">Linux</span>
+                        <span class="tag hoverable">Wireshark</span>
+                        <span class="tag hoverable">Cisco Systems</span>
                     </div>
                 </div>
             </div>
@@ -346,7 +357,7 @@
         });
 
         // SCRIPT INTERACTIF D'INCLINAISON (TILT EFFECT 3D)
-        const interactiveTags = document.querySelectorAll('.cv-tag, .tech-tag, .project-media-container');
+        const interactiveTags = document.querySelectorAll('.tag, .project-media-container');
 
         interactiveTags.forEach(tag => {
             tag.addEventListener('mousemove', (e) => {

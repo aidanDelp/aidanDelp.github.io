@@ -45,7 +45,7 @@ body {
 /* Masquer le curseur système sur tous les éléments interactifs */
 a, button, input, textarea, select, 
 .hoverable, .cv-block, .project-card, .btn-download, 
-.cv-tag, .tech-tag, [role="button"], [type="button"], 
+.tag, .tech-tag, [role="button"], [type="button"], 
 [type="submit"], [type="reset"] {
     cursor: none !important;
 }
@@ -67,13 +67,19 @@ a, button, input, textarea, select,
     width: 40px;
     height: 40px;
     border: 1px solid var(--accent-color);
+    /* flou */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    /* dégradé de flou */
+    -webkit-mask-image: radial-gradient(circle at center, black 20%, transparent 100%);
+    mask-image: radial-gradient(circle at center, black 20%, transparent 100%);
+    -webkit-background-composite: border;
     border-radius: 50%;
     position: fixed;
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 9998;
     transition: transform 0.1s linear, width 0.3s var(--easing), height 0.3s var(--easing);
-    opacity: 0.4;
 }
 
 .hoverable:hover ~ #custom-cursor {
@@ -132,11 +138,11 @@ nav::before {
     pointer-events: none;
     background: rgba(12, 51, 32, 0.2);
     /* Intensité du flou maximal */
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(36px);
+    -webkit-backdrop-filter: blur(36px);
     /* dégradé de flou */
-    -webkit-mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
 }
 
 nav:hover {
@@ -471,7 +477,7 @@ section {
 }
 
 /* ALIGNEMENT ET EFFET DES QUALITÉS ET TECHNOLOGIES (INTERACTIFS) */
-.cv-tags {
+.tags {
     display: flex;
     flex-flow: nowrap;
     text-align: center;
@@ -479,7 +485,7 @@ section {
     gap: 12px;
 }
 
-.cv-tag, .tech-tag {
+.tag, .tech-tag {
     background: var(--surface-color);
     color: var(--text-color);
     padding: 10px 20px;
@@ -492,7 +498,7 @@ section {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.cv-tag:hover, .tech-tag:hover {
+.tag:hover, .tech-tag:hover {
     background: rgba(74, 140, 92, 0.3);
     border-color: var(--accent-color);
 }
@@ -583,7 +589,7 @@ section {
     border-radius: 6px;
     overflow: hidden;
     position: relative;
-    border: 1px solid rgba(74, 140, 92, 0.2);
+    border: 2px solid rgba(74, 140, 92, 0.2);
     transition: transform 0.1s, border-color 0.6s var(--easing);
 }
 
