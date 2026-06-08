@@ -19,7 +19,7 @@
             <a href="#page-one-hero" class="hoverable">Bio & CV</a>
             <a href="#page-two-projects" class="hoverable">Personnels</a>
             <a href="#page-three-future" class="hoverable">Vision</a>
-            <a href="#page-four-academic" class="hoverable">Académiques</a>
+            <a href="#page-four-academic" class="hoverable">Projets</a>
         </div>
     </nav>
 
@@ -42,7 +42,11 @@
             </div>
             <div class="bio-text reveal">
                 <p>
-                    Passionné par la convergence entre la <strong>logique technique</strong> et l'<strong>expression artistique</strong>, j'explore les possibilités structurelles du code pour concevoir des expériences numériques interactives et immersives. Mon cursus universitaire me permet de consolider des bases solides en ingénierie logicielle tout en cultivant une forte affinité pour l'audiovisuel, la spatialisation sonore et le sound design de pointe.
+                    Passionné par le lien entre la <strong>conception logicielle</strong> et l'<strong>
+                    expression artistique</strong>, j'explore les possibilités de mes codes pour 
+                    concevoir des expériences numériques agréables et immersives. Mon cursus 
+                    universitaire me permet de consolider des bases solides en informatique tout 
+                    en cultivant une forte affinité pour l'audiovisuel, la musique et le sport.
                 </p>
             </div>
         </div>
@@ -56,13 +60,13 @@
                 </div>
                 <div class="cv-meta-item">
                     <span>Rythme Souhaité</span>
-                    En fonction du planning universitaire — Alternance régulière (moyenne d'une semaine sur deux, y compris vacances scolaires).
+                    En fonction du planning universitaire de l'année - Alternance régulière (moyenne d'une semaine sur deux, comprend les vacances scolaires).
                 </div>
                 <div class="cv-meta-item" style="margin-top: 20px;">
-                    <span>Localisation</span>
-                    <strong>La Garnache / Nantes</strong><br>
-                    0762677075 | aidan24082306@gmail.com<br>
-                    Né le 24 Août 2007 — Véhiculé (Permis B)
+                    <span>Contact</span>
+                    <strong>La Garnache / Nantes<br>
+                    0762677075<br>
+                    aidan24082306@gmail.com</strong><br> 
                 </div>
             </div>
 
@@ -109,17 +113,17 @@
                 <ul class="cv-timeline">
                     <li class="cv-timeline-item">
                         <span class="cv-timeline-date">2026</span>
-                        <strong>Job d'été — Snack</strong>
-                        <p style="color: var(--text-muted); font-size: 0.9rem;">Camping Le Pont d'Yeu</p>
+                        <strong>Job d'été > Snack</strong>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Camping — Le Pont d'Yeu</p>
                     </li>
                     <li class="cv-timeline-item">
                         <span class="cv-timeline-date">2025</span>
-                        <strong>Job d'été — Employé Libre-Service</strong>
+                        <strong>Job d'été > Employé boulanger</strong>
                         <p style="color: var(--text-muted); font-size: 0.9rem;">Super U — Saint-Jean De Monts</p>
                     </li>
                     <li class="cv-timeline-item">
                         <span class="cv-timeline-date">2024 - 2025</span>
-                        <strong>Job Étudiant (Missions Décembre / Mai)</strong>
+                        <strong>Job Étudiant (Décembre / Mai)</strong>
                         <p style="color: var(--text-muted); font-size: 0.9rem;">Burger King — Challans</p>
                     </li>
                     <li class="cv-timeline-item">
@@ -159,16 +163,18 @@
             </div>
         </div>
 
+        <br><br><br><br>
+
         <div class="marquee-container reveal">
             <div class="marquee-content">
-                <h4>Développement de modules audio interactifs</h4>
-                <h4>Exploration Scénographique & Audiovisuelle</h4>
-                <h4>Programmation WebGL / Three.js</h4>
-                <h4>Veille Technologique Bases de Données</h4>
-                <h4>Développement de modules audio interactifs</h4>
-                <h4>Exploration Scénographique & Audiovisuelle</h4>
-                <h4>Programmation WebGL / Three.js</h4>
-                <h4>Veille Technologique Bases de Données</h4>
+                <h4>Développement WEB via html/css/js</h4>
+                <h4>Composition Scénographique & Audiovisuelle</h4>
+                <h4>Programmation PyGame, python</h4>
+                <h4>Bases de Données SQL et Pandas</h4>
+                <h4>Développement WEB via html/css/js</h4>
+                <h4>Composition Scénographique & Audiovisuelle</h4>
+                <h4>Programmation PyGame, python</h4>
+                <h4>Bases de Données SQL et Pandas</h4>
             </div>
         </div>
     </section>
@@ -182,7 +188,7 @@
                 <div class="project-media-container"></div>
                 <div class="project-info">
                     <div>
-                        <h3>Production Sonore & Interactivité Audio</h3>
+                        <h3>Production Sonore & Audiovisuelle</h3>
                         <p>Recherche structurelle sur la synchronisation d'événements visuels complexes et de flux de données sonores. Conception d'environnements rythmés et traitement du signal audio.</p>
                     </div>
                     <span class="project-link-icon">↗</span>
@@ -340,7 +346,7 @@
         });
 
         // SCRIPT INTERACTIF D'INCLINAISON (TILT EFFECT 3D)
-        const interactiveTags = document.querySelectorAll('.cv-tag, .tech-tag');
+        const interactiveTags = document.querySelectorAll('.cv-tag, .tech-tag, .project-media-container');
 
         interactiveTags.forEach(tag => {
             tag.addEventListener('mousemove', (e) => {
